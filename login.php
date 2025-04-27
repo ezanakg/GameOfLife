@@ -1,7 +1,7 @@
 <?php
 // login.php
 session_start();
-require_once "db.php"; // your DB connection script
+require_once "db.php"; 
 
 $message = "";
 
@@ -59,6 +59,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <button class="btn btn-primary">Login</button>
         <a href="register.php" class="btn btn-link">Register</a>
+        <!-- ✅ NEW: Admin Login Link -->
+        <div class="mt-3">
+            <p>Are you an admin?</p>
+            <a href="admin_login.php" class="btn btn-outline-dark">Admin Login</a>
+        </div>
     </form>
 </body>
 </html>
